@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japanese Practice</title>
+    <title>Japanese Practice Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Japanese Practice</h1>
+    <h1>Welcome to Japanese Practice</h1>
+    <div class="container">
 
-    <!-- Buttons to switch between sections -->
-    <div>
+        <!-- Speaking Practice Section -->
         <button id="speaking-practice-btn">Speaking Practice</button>
+        <section id="speaking-practice-section">
+            <h2 class="sub-heading">Practice Speaking in Japanese</h2>
+            <p id="english-sentence"></p>
+            <button id="random-btn" class="reveal-btn">Show Next Sentence</button>
+            <div id="japanese-translation">
+                <p></p>
+            </div>
+        </section>
+
+        <!-- Japanese Words Section -->
         <button id="japanese-words-btn">Japanese Words</button>
+        <section id="japanese-words-section">
+            <h2 class="sub-heading">Guess the Meaning of Japanese Words</h2>
+            <p id="japanese-word"></p>
+            <button id="random-word-btn" class="reveal-btn">Show Next Word</button>
+            <div id="english-meaning">
+                <p></p>
+            </div>
+        </section>
+
     </div>
 
-    <!-- Speaking Practice Section -->
-    <div id="speaking-practice-section" style="display: none;">
-        <h2>Speaking Practice</h2>
-        <p id="english-sentence"></p>
-        <div id="japanese-translation" style="display: none;"></div>
-        <button id="random-btn">Random Sentence</button>
-        <button id="reveal-btn" style="display: none;">Reveal Translation</button>
-    </div>
-
-    <!-- Japanese Words Section -->
-    <div id="japanese-words-section" style="display: none;">
-        <h2>Japanese Words</h2>
-        <p id="japanese-word"></p>
-        <div id="english-meaning" style="display: none;"></div>
-        <button id="random-word-btn">Random Word</button>
-        <button id="reveal-word-btn" style="display: none;">Reveal Meaning</button>
-    </div>
+    <footer>
+        <p>&copy; 2024 Japanese Practice. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
