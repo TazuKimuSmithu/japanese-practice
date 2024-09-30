@@ -3,43 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japanese Practice Website</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Japanese Practice</title>
 </head>
 <body>
-
-    <h1>Welcome to Japanese Practice</h1>
-    <div class="container">
-
-        <!-- Speaking Practice Section -->
+    <div class="menu">
         <button id="speaking-practice-btn">Speaking Practice</button>
-        <section id="speaking-practice-section">
-            <h2 class="sub-heading">Practice Speaking in Japanese</h2>
-            <p id="english-sentence"></p>
-            <button id="random-btn" class="reveal-btn">Show Next Sentence</button>
-            <div id="japanese-translation">
-                <p></p>
-            </div>
-        </section>
-
-        <!-- Japanese Words Section -->
         <button id="japanese-words-btn">Japanese Words</button>
-        <section id="japanese-words-section">
-            <h2 class="sub-heading">Guess the Meaning of Japanese Words</h2>
-            <p id="japanese-word"></p>
-            <button id="random-word-btn" class="reveal-btn">Show Next Word</button>
-            <div id="english-meaning">
-                <p></p>
-            </div>
-        </section>
-
     </div>
 
-    <footer>
-        <p>&copy; 2024 Japanese Practice. All rights reserved.</p>
-    </footer>
+    <div id="speaking-practice-section" style="display: block;">
+        <h2>Speaking Practice</h2>
+        <p id="english-sentence">Press the button to get a sentence.</p>
+        <button id="random-btn">Get Random Sentence</button>
+        <button id="reveal-btn" style="display: none;">Show Answer</button>
+        <div id="japanese-translation"></div>
+    </div>
+
+    <div id="japanese-words-section" style="display: none;">
+        <h2>Japanese Words</h2>
+        <p id="japanese-word">Press the button to get a word.</p>
+        <button id="random-word-btn">Get Random Word</button>
+        <button id="reveal-word-btn" style="display: none;">Show Answer</button>
+        <div id="english-meaning"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
 
