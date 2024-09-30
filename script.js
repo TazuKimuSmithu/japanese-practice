@@ -190,6 +190,12 @@ const phrases = [
         romaji: "Kore ra wa watashi no chizu desu.",
         japanese: "これらわ私の地図です"
     },
+    {
+        english: "Those are my bags.”,
+        romaji: "Sore ra wa watashi no kaban desu.",
+        japanese: "それらわ私のカバンです"
+    },
+
 
 // Add more phrases here...
 ];
