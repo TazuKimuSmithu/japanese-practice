@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japanese Speaking Practice</title>
+    <title>Japanese Practice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Japanese Speaking Practice</h1>
+    <h1>Japanese Practice</h1>
+    
+    <!-- Menu for navigation -->
+    <div class="menu">
+        <button id="speaking-practice-btn">Speaking Practice</button>
+        <button id="japanese-words-btn">Japanese Words</button>
+    </div>
 
-    <!-- English sentence -->
-    <div id="english-sentence">Click below to get an English sentence!</div>
+    <!-- Speaking Practice Section -->
+    <div id="speaking-practice-section" class="section">
+        <h2>Speaking Practice</h2>
+        <div id="english-sentence">Click below to get an English sentence!</div>
+        <button id="random-btn">Get Random Sentence</button>
+        <button id="reveal-btn" style="display:none;">Reveal Japanese Translation</button>
+        <div id="japanese-translation" style="display:none;"></div>
+    </div>
 
-    <!-- Button to get a random English sentence -->
-    <button id="random-btn">Get Random Sentence</button>
-
-    <!-- Button to reveal the Japanese translation -->
-    <button id="reveal-btn" style="display:none;">Reveal Japanese Translation</button>
-
-    <!-- The area where the Japanese translation will be shown -->
-    <div id="japanese-translation" style="display:none;"></div>
+    <!-- Japanese Words Section -->
+    <div id="japanese-words-section" class="section" style="display:none;">
+        <h2>Japanese Words</h2>
+        <div id="japanese-word">Click below to get a Japanese word!</div>
+        <button id="random-word-btn">Get Random Word</button>
+        <button id="reveal-word-btn" style="display:none;">Reveal English Meaning</button>
+        <div id="english-meaning" style="display:none;"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
