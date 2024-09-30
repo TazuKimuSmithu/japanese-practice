@@ -170,11 +170,10 @@ document.getElementById('japanese-words-btn').addEventListener('click', () => {
 // Speaking Practice: Get a random English sentence
 document.getElementById('random-btn').addEventListener('click', () => {
     const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
-    
     document.getElementById('english-sentence').innerText = randomPhrase.english;
     document.getElementById('japanese-translation').style.display = 'none';
     document.getElementById('reveal-btn').style.display = 'inline';
-    
+
     document.getElementById('reveal-btn').dataset.romaji = randomPhrase.romaji;
     document.getElementById('reveal-btn').dataset.japanese = randomPhrase.japanese;
 });
@@ -183,7 +182,7 @@ document.getElementById('random-btn').addEventListener('click', () => {
 document.getElementById('reveal-btn').addEventListener('click', () => {
     const romaji = document.getElementById('reveal-btn').dataset.romaji;
     const japanese = document.getElementById('reveal-btn').dataset.japanese;
-    
+
     document.getElementById('japanese-translation').innerHTML = 
         `<p><strong>Romaji:</strong> ${romaji}</p>
          <p><strong>Japanese:</strong> ${japanese}</p>`;
@@ -193,15 +192,10 @@ document.getElementById('reveal-btn').addEventListener('click', () => {
 // Japanese Words: Get a random Japanese word
 document.getElementById('random-word-btn').addEventListener('click', () => {
     const randomWord = words[Math.floor(Math.random() * words.length)];
-    
-    // Show Romaji first
     document.getElementById('japanese-word').innerText = randomWord.romaji;
-    
-    // Hide the Japanese characters and English translation
     document.getElementById('english-meaning').style.display = 'none';
     document.getElementById('reveal-word-btn').style.display = 'inline';
-    
-    // Store the Japanese characters and English translation for later reveal
+
     document.getElementById('reveal-word-btn').dataset.japanese = randomWord.japanese;
     document.getElementById('reveal-word-btn').dataset.english = randomWord.english;
 });
@@ -210,11 +204,10 @@ document.getElementById('random-word-btn').addEventListener('click', () => {
 document.getElementById('reveal-word-btn').addEventListener('click', () => {
     const japanese = document.getElementById('reveal-word-btn').dataset.japanese;
     const english = document.getElementById('reveal-word-btn').dataset.english;
-    
-    // Reveal the Japanese characters and English meaning
+
     document.getElementById('english-meaning').innerHTML = 
         `<p><strong>Japanese:</strong> ${japanese}</p>
          <p><strong>English:</strong> ${english}</p>`;
-    
+
     document.getElementById('english-meaning').style.display = 'block';
 });
