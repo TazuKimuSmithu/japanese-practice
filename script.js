@@ -1,5 +1,5 @@
 // Array of English sentences with their Japanese translations
-const phrases = [
+const speakingPhrases = [
     {
         english: "That is my hat.",
         romaji: "Sore wa watashi no boushi desu.",
