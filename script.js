@@ -1,5 +1,5 @@
 // Array of English sentences with their Japanese translations
-const speakingPhrases = [
+const phrases = [
     {
         english: "That is my hat.",
         romaji: "Sore wa watashi no boushi desu.",
@@ -22,181 +22,112 @@ const speakingPhrases = [
     },
     {
         english: "Excuse me, what time is it now?",
-        romaji: "sumimasen, ima nanji desu ka?",
+        romaji: "Sumimasen, ima nanji desu ka?",
         japanese: "すみません今何時ですか？"
     },
     {
         english: "Is it tasty?",
         romaji: "Oishii desu ka?",
         japanese: "おいしいですか？"
-    },    
+    },
     {
         english: "Is that sushi?",
-        romaji: "Sore wa shushi desu ka?",
-        japanese: "それわ寿司ですか？"
+        romaji: "Sore wa sushi desu ka?",
+        japanese: "それは寿司ですか？"
     },
     {
         english: "Where is the convenience store?",
         romaji: "Konbini wa doko desu ka?",
-        japanese: "コンビニわどこですか？"
+        japanese: "コンビニはどこですか？"
     },
     {
-        english: "That is my umbrella." ,
+        english: "That is my umbrella.",
         romaji: "Sore wa watashi no kasa desu.",
-        japanese: "それわ私のkさsです"
+        japanese: "それは私の傘です。"
     },
     {
         english: "Those are my shoes.",
-        romaji: "Sore ra wa watashi no kutsu desu.",
-        japanese: "それらわ私の靴です"
+        romaji: "Sorera wa watashi no kutsu desu.",
+        japanese: "それらは私の靴です。"
     },
     {
-        english: "This coat is cute.”,
+        english: "This coat is cute.",
         romaji: "Kono kooto wa kawaii desu.",
-        japanese: "この子音羽かわいいです"
+        japanese: "このコートはかわいいです。"
     },
     {
-        english: "Naomi is a cheerful person.”,
+        english: "Naomi is a cheerful person.",
         romaji: "Naomi san wa akarui hito desu.",
-        japanese: "直美さんわ明るい人です"
+        japanese: "直美さんは明るい人です。"
     },
     {
-        english: "My husband is very funny.”,
-        romaji: "otto wa totemo omoshiroi desu.",
-        japanese: "夫わとても面白いです"
+        english: "My husband is very funny.",
+        romaji: "Otto wa totemo omoshiroi desu.",
+        japanese: "夫はとても面白いです。"
     },
     {
-        english: "It's about two-thirty.”,
-        romaji: "ni ji han goro desu.",
-        japanese: "二時半ごろです"
+        english: "It's about two-thirty.",
+        romaji: "Ni ji han goro desu.",
+        japanese: "二時半ごろです。"
     },
     {
-        english: "That's not my ticket.”,
+        english: "That's not my ticket.",
         romaji: "Sore wa watashi no kippu janai desu.",
-        japanese: "それわ私の切符じゃないです"
+        japanese: "それは私の切符じゃないです。"
     },
     {
-        english: "Hana's passport is here.”,
+        english: "Hana's passport is here.",
         romaji: "Hana san no pasupooto wa koko desu.",
-        japanese: "はなさんおパスポ音羽ココです"
+        japanese: "はなさんのパスポートはここです。"
     },
     {
-        english: "Good morning, nice to meet you.”,
+        english: "Good morning, nice to meet you.",
         romaji: "Ohayou gozaimasu, hajimemashite.",
-        japanese: "おはようございます初めまして"
+        japanese: "おはようございます、初めまして。"
     },
     {
-        english: "Hello, what's your name?”,
-        romaji: "Konnichiwa, onamaewa?",
-        japanese: "こんにちわお名前わ"
+        english: "Hello, what's your name?",
+        romaji: "Konnichiwa, onamae wa?",
+        japanese: "こんにちは、お名前は？"
     },
     {
-        english: "Where are you from?”,
+        english: "Where are you from?",
         romaji: "Shusshin wa doko desu ka?",
-        japanese: "出身話どこですか"
+        japanese: "出身はどこですか？"
     },
     {
-        english: "Naomi lives in this town.”,
+        english: "Naomi lives in this town.",
         romaji: "Naomi san wa kono machi ni sundeimasu.",
-        japanese: "直美さんわこのまちまちにすねいます"
+        japanese: "直美さんはこの町に住んでいます。"
     },
     {
-        english: "New York is also a big city.”,
+        english: "New York is also a big city.",
         romaji: "Nyuyooku mo ookii toshi desu.",
-        japanese: "nゆよおくも大きい年です"
+        japanese: "ニューヨークも大きい都市です。"
     },
     {
-        english: "It's very lively here.”,
+        english: "It's very lively here.",
         romaji: "Koko wa totemo nigiyaka desu.",
-        japanese: "ココわとてもい賑やかです"
+        japanese: "ここはとても賑やかです。"
     },
     {
-        english: "Tokyo is not quiet.”,
+        english: "Tokyo is not quiet.",
         romaji: "Toukyou wa shizuka janai desu.",
-        japanese: "東京和静かじゃないです"
+        japanese: "東京は静かじゃないです。"
     },
     {
-        english: "My older sister is famous.”,
-        romaji: "Ane wa yuumei desu",
-        japanese: "姉わ有名です"
+        english: "My older sister is famous.",
+        romaji: "Ane wa yuumei desu.",
+        japanese: "姉は有名です。"
     },
     {
-        english: "My younger brother is noisy.”,
+        english: "My younger brother is noisy.",
         romaji: "Otouto wa urusai desu.",
-        japanese: "弟わうるさいです"
-    },
-    {
-        english: "My older brother is also a nurse.”,
-        romaji: "Ani mo kangoshi desu.",
-        japanese: "兄も看護師です"
-    },
-    {
-        english: "My younger sister isn't six years old.”,
-        romaji: "Imouto wa roku sai janai desu.",
-        japanese: "妹話六歳じゃないです"
-    },
-    {
-        english: "My daughter is also very smart.”,
-        romaji: "Musume mo totemo atamagaii desu.",
-        japanese: "娘もとても頭がいいです"
-    },
-    {
-        english: "My son lives in Britain.”,
-        romaji: "Musuko wa igirisu ni sundeimasu.",
-        japanese: "息子和イギリスに住んでいます"
-    },
-    {
-        english: "My mum is very busy.”,
-        romaji: "Haha wa totemo isogashii desu.",
-        japanese: "母わとても忙しいです"
-    },
-    {
-        english: "My wife is an office worker.”,
-        romaji: "Tsuma wa kaishain desu.",
-        japanese: "妻若い社員です"
-    },
-    {
-        english: "Ken's family is small.”,
-        romaji: "Ken san no kazoku wa chiisai desu.",
-        japanese: "研鑽お家族わ小さいです"
-    },
-    {
-        english: "Brazil is not very clean.”,
-        romaji: "Burajiru wa totemo kirei janai desu.",
-        japanese: "ブラジルわとても綺麗じゃないです"
-    },
-    {
-        english: "Welcome, Lilly.”,
-        romaji: "Lilly san, youkoso.",
-        japanese: "リリさんようこそ"
-    },
-    {
-        english: "Ken, how's Kyoto?”,
-        romaji: "Ken san kyouto wa dou desu ka?",
-        japanese: "研鑽京都和銅ですか"
-    },
-    {
-        english: "Is the airport there?”,
-        romaji: "Kuukou wa soko desu ka?",
-        japanese: "空港わそこですか"
-    },
-    {
-        english: "It's not a subway.”,
-        romaji: "Chikatetsu janai desu.",
-        japanese: "それわ私の切符じゃないです"
-    },
-    {
-        english: "These are my maps.”,
-        romaji: "Kore ra wa watashi no chizu desu.",
-        japanese: "これらわ私の地図です"
-    },
-    {
-        english: "Those are my bags.”,
-        romaji: "Sore ra wa watashi no kaban desu.",
-        japanese: "それらわ私のカバンです"
-    },
+        japanese: "弟はうるさいです。"
+    }
+];
 
-// Japanese words with their English translations
+// Array of Japanese words with their English translations
 const words = [
     {
         japanese: "車",
@@ -222,7 +153,7 @@ const words = [
         japanese: "水",
         romaji: "Mizu",
         english: "Water"
-    },
+    }
 ];
 
 // Switching between sections
