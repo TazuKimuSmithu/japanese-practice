@@ -7,30 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <h1>Japanese Practice</h1>
-    
-    <!-- Menu for navigation -->
-    <div class="menu">
+
+    <!-- Buttons to switch between sections -->
+    <div>
         <button id="speaking-practice-btn">Speaking Practice</button>
         <button id="japanese-words-btn">Japanese Words</button>
     </div>
 
     <!-- Speaking Practice Section -->
-    <div id="speaking-practice-section" class="section">
+    <div id="speaking-practice-section" style="display: none;">
         <h2>Speaking Practice</h2>
-        <div id="english-sentence">Click below to get an English sentence!</div>
-        <button id="random-btn">Get Random Sentence</button>
-        <button id="reveal-btn" style="display:none;">Reveal Japanese Translation</button>
-        <div id="japanese-translation" style="display:none;"></div>
+        <p id="english-sentence"></p>
+        <div id="japanese-translation" style="display: none;"></div>
+        <button id="random-btn">Random Sentence</button>
+        <button id="reveal-btn" style="display: none;">Reveal Translation</button>
     </div>
 
     <!-- Japanese Words Section -->
-    <div id="japanese-words-section" class="section" style="display:none;">
+    <div id="japanese-words-section" style="display: none;">
         <h2>Japanese Words</h2>
-        <div id="japanese-word">Click below to get a Japanese word!</div>
-        <button id="random-word-btn">Get Random Word</button>
-        <button id="reveal-word-btn" style="display:none;">Reveal English Meaning</button>
-        <div id="english-meaning" style="display:none;"></div>
+        <p id="japanese-word"></p>
+        <div id="english-meaning" style="display: none;"></div>
+        <button id="random-word-btn">Random Word</button>
+        <button id="reveal-word-btn" style="display: none;">Reveal Meaning</button>
     </div>
 
     <script src="script.js"></script>
