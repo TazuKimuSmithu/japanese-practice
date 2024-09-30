@@ -12,7 +12,7 @@ const phrases = [
     },
     {
         english: "No, my dad isn't fashionable.",
-        romaji: "Iie, watashi no otousan wa oshare janai desu.",
+        romaji: "Iie, watashi no chichi wa oshare janai desu.",
         japanese: "いいえ、私のお父さんはおしゃれじゃないです。"
     },
     {
