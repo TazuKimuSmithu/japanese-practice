@@ -4,15 +4,14 @@ body {
     margin-top: 50px;
 }
 
-h1 {
+h1, h2 {
     background-color: #333;
     color: white;
     padding: 1em;
 }
 
-#english-sentence {
-    font-size: 1.5em;
-    margin: 20px 0;
+.menu {
+    margin-bottom: 20px;
 }
 
 button {
@@ -22,8 +21,21 @@ button {
     cursor: pointer;
 }
 
-#japanese-translation {
+#english-sentence, #japanese-word {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#japanese-translation, #english-meaning {
     font-size: 1.5em;
     margin-top: 20px;
     font-weight: bold;
+}
+
+.section {
+    display: none;
+}
+
+#speaking-practice-section, #japanese-words-section {
+    display: block;
 }
