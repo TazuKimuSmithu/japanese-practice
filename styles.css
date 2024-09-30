@@ -1,35 +1,121 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0ff;
+    color: #3e065f;
+    margin: 0;
     padding: 0;
 }
 
 h1, h2 {
-    color: #333;
-}
-
-button {
-    margin: 5px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ddd;
-}
-
-#japanese-translation, #english-meaning {
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-strong {
-    font-weight: bold;
+    color: #2a004f;
+    text-align: center;
 }
 
 p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Menu Button Styling */
+button {
+    background-color: #5e239d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3f0071;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 2px #3f0071;
+}
+
+/* Layout and Section Styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+#speaking-practice-section, #japanese-words-section {
+    background-color: #f7f4ff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none;
+}
+
+/* Revealed Translation and Words Styling */
+#japanese-translation, #english-meaning {
+    background-color: #f3e5ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
     font-size: 20px;
+}
+
+#japanese-translation p, #english-meaning p {
+    margin: 0;
+}
+
+/* Specific Sections: Speaking Practice and Japanese Words */
+#speaking-practice-section .sub-heading, #japanese-words-section .sub-heading {
+    color: #7c25d4;
+    margin-bottom: 15px;
+}
+
+#english-sentence, #japanese-word {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a004f;
+    margin-bottom: 10px;
+}
+
+.reveal-btn {
+    background-color: #7c25d4;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reveal-btn:hover {
+    background-color: #520d6e;
+}
+
+.reveal-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px 2px #520d6e;
+}
+
+/* Menu Buttons */
+#speaking-practice-btn, #japanese-words-btn {
+    width: 200px;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+}
+
+#random-btn, #random-word-btn {
+    width: 180px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    color: #5e239d;
+    font-size: 14px;
 }
