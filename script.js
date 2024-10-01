@@ -162,12 +162,6 @@ document.getElementById('speaking-practice-btn').addEventListener('click', () =>
     document.getElementById('japanese-words-section').style.display = 'none';
 });
 
-// Switching between sections
-document.getElementById('speaking-practice-btn').addEventListener('click', () => {
-    document.getElementById('speaking-practice-section').style.display = 'block';
-    document.getElementById('japanese-words-section').style.display = 'none';
-});
-
 document.getElementById('japanese-words-btn').addEventListener('click', () => {
     document.getElementById('speaking-practice-section').style.display = 'none';
     document.getElementById('japanese-words-section').style.display = 'block';
