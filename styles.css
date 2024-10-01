@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Menu at the top */
+    justify-content: space-between; /* Menu at the top */
     background-color: #F3E5F5; /* light purple background */
 }
 
