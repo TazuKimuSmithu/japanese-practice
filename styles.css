@@ -25,7 +25,7 @@ header {
     width: 100%;
     text-align: center; /* Menu and title center aligned */
     padding: 20px 0;
-    padding-bottom: 200px: /* Use this to create kore gap between header and sections */
+    padding-bottom: 200px; /* Use this to create kore gap between header and sections */
 }
 
 /* Styling for buttons in the header */
