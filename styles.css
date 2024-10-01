@@ -66,6 +66,10 @@ button:hover {
     background-color: #AB47BC;
 }
 
+h1, h2 {
+    font-family: 'Sawarabi Mincho', serif; /* Use for headings */
+}
+
 /* Adjust spacing between content in sections */
 p, h2 {
     margin-bottom: 15px;
