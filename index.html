@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Japanese Learning</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Japanese Practice</title>
 </head>
 <body>
-    <div class="menu">
-        <button id="speaking-practice-btn">Speaking Practice</button>
-        <button id="japanese-words-btn">Japanese Words</button>
+    <div class="container">
+        <!-- Page Heading -->
+        <h1>Japanese Language Practice</h1>
+
+        <!-- Section Selection Buttons -->
+        <div class="menu-buttons">
+            <button id="speaking-practice-btn">Speaking Practice</button>
+            <button id="japanese-words-btn">Japanese Words</button>
+        </div>
+
+        <!-- Speaking Practice Section -->
+        <div id="speaking-practice-section" class="content-section">
+            <h2>Speaking Practice</h2>
+            <p>Test yourself by translating English sentences into Japanese!</p>
+            <button id="random-btn">Get Random Sentence</button>
+            <p><strong>English Sentence:</strong> <span id="english-sentence"></span></p>
+            <div id="japanese-translation" style="display:none;"></div>
+            <button id="reveal-btn" style="display:none;">Show Answer</button>
+        </div>
+
+        <!-- Japanese Words Section -->
+        <div id="japanese-words-section" class="content-section" style="display:none;">
+            <h2>Japanese Words</h2>
+            <p>Guess the meaning of the Japanese words shown below!</p>
+            <button id="random-word-btn">Get Random Word</button>
+            <p><strong>Romaji:</strong> <span id="japanese-word"></span></p>
+            <div id="english-meaning" style="display:none;"></div>
+            <button id="reveal-word-btn" style="display:none;">Show Answer</button>
+        </div>
     </div>
 
-    <div id="speaking-practice-section" style="display: block;">
-        <h2>Speaking Practice</h2>
-        <p id="english-sentence">Press the button to get a sentence.</p>
-        <button id="random-btn">Get Random Sentence</button>
-        <button id="reveal-btn" style="display: none;">Show Answer</button>
-        <div id="japanese-translation"></div>
-    </div>
-
-    <div id="japanese-words-section" style="display: none;">
-        <h2>Japanese Words</h2>
-        <p id="japanese-word">Press the button to get a word.</p>
-        <button id="random-word-btn">Get Random Word</button>
-        <button id="reveal-word-btn" style="display: none;">Show Answer</button>
-        <div id="english-meaning"></div>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
+
 
 
