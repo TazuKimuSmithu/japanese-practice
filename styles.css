@@ -1,82 +1,99 @@
+/* Body and Main Container */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-    
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    min-height: 100vh; /* Ensure it takes the full viewport height */
+    justify-content: center; /* Horizontally centre the main content */
+    align-items: center; /* Vertically centre the main content */
+    min-height: 100vh; /* Ensure full viewport height */
     margin: 0;
-    background-color: #4A3D99; /* Background colour (monochromatic purple theme) */
+    background-color: #4A3D99; /* Monochromatic purple background */
+    font-family: Arial, sans-serif;
 }
 
-.menu {
-    margin-bottom: 20px;
-
+/* Main content container (applies to both sections) */
+.section {
     display: flex;
-    justify-content: center; /* Centre the buttons horizontally */
-    margin-bottom: 20px; /* Add some space between the buttons and the content */
+    flex-direction: column;
+    justify-content: center; /* Vertically centre the content */
+    align-items: center; /* Horizontally centre the content */
+    text-align: center; /* Centre the text */
+    padding: 20px;
+    background-color: #7866D9; /* Lighter purple background for sections */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px; /* Limit the maximum width */
+    margin: 20px auto; /* Centre within the page */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
 }
 
-button {
-    background-color: #6a0dad; /* Purple */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-right: 10px;
-    
-    margin: 0 10px; /* Add spacing between the buttons */
+/* Styling for buttons in the menu */
+#menu {
+    display: flex;
+    justify-content: center; /* Centre the buttons */
+    margin-bottom: 20px; /* Space between buttons and content */
+}
+
+#menu button {
+    margin: 0 10px; /* Space between buttons */
     padding: 10px 20px;
-    background-color: #6F5CCF;
+    background-color: #6F5CCF; /* Darker purple for buttons */
     border: none;
     border-radius: 8px;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-button:hover {
-    background-color: #5e0b9b; /* Darker purple on hover */
+#menu button:hover {
+    background-color: #5747A5; /* Darker purple on hover */
 }
 
-h2 {
-    color: #6a0dad;
+/* Headings inside sections */
+h1, h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
-    text-align: center; /* Center the text */
-    padding: 20px;
-    background-color: #7866D9; /* Nice purple background */
-    border-radius: 10px;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto; /* Centre it within the container */
+/* Sentence and word display */
+#english-sentence, #japanese-word {
+    font-size: 1.5rem;
+    color: #F1EFFF; /* Lighter colour for text */
+    margin-bottom: 20px;
 }
 
 #japanese-translation, #english-meaning {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #6a0dad;
-    border-radius: 5px;
-    background-color: #eae6f2; /* Light purple background */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
-    text-align: center; /* Center the text */
-    padding: 20px;
-    background-color: #7866D9; /* Nice purple background */
-    border-radius: 10px;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto; /* Centre it within the container */
+    font-size: 1.2rem;
+    color: white;
 }
 
+/* Buttons for 'Show Answer' and 'Reveal' */
+button.show-answer-btn {
+    background-color: #6F5CCF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+button.show-answer-btn:hover {
+    background-color: #5747A5; /* Darker purple on hover */
+}
+
+/* Styling for the Japanese words and translation display */
+p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* For larger screens, ensure sections don't stretch too wide */
+@media (min-width: 1024px) {
+    .section {
+        max-width: 600px; /* Adjust max width for larger screens */
+    }
+}
