@@ -1,99 +1,93 @@
-/* Body and Main Container */
+/* General body styling */
 body {
-    display: flex;
-    justify-content: center; /* Horizontally centre the main content */
-    align-items: center; /* Vertically centre the main content */
-    min-height: 100vh; /* Ensure full viewport height */
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: #4A3D99; /* Monochromatic purple background */
-    font-family: Arial, sans-serif;
-}
-
-/* Main content container (applies to both sections) */
-.section {
+    padding: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically centre the content */
-    align-items: center; /* Horizontally centre the content */
-    text-align: center; /* Centre the text */
+    justify-content: flex-start; /* Menu at the top */
+    background-color: #F3E5F5; /* light purple background */
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #7866D9; /* Lighter purple background for sections */
-    border-radius: 10px;
-    width: 80%;
-    max-width: 800px; /* Limit the maximum width */
-    margin: 20px auto; /* Centre within the page */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+    background-color: #E1BEE7; /* slightly darker purple */
 }
 
-/* Styling for buttons in the menu */
-#menu {
-    display: flex;
-    justify-content: center; /* Centre the buttons */
-    margin-bottom: 20px; /* Space between buttons and content */
+/* Header section styling */
+header {
+    width: 100%;
+    text-align: center; /* Menu and title center aligned */
+    padding: 20px 0;
 }
 
-#menu button {
-    margin: 0 10px; /* Space between buttons */
+/* Styling for buttons in the header */
+header button {
+    margin: 10px;
     padding: 10px 20px;
-    background-color: #6F5CCF; /* Darker purple for buttons */
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-}
-
-#menu button:hover {
-    background-color: #5747A5; /* Darker purple on hover */
-}
-
-/* Headings inside sections */
-h1, h2 {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Sentence and word display */
-#english-sentence, #japanese-word {
-    font-size: 1.5rem;
-    color: #F1EFFF; /* Lighter colour for text */
-    margin-bottom: 20px;
-}
-
-#japanese-translation, #english-meaning {
-    font-size: 1.2rem;
-    color: white;
-}
-
-/* Buttons for 'Show Answer' and 'Reveal' */
-button.show-answer-btn {
-    background-color: #6F5CCF;
+    background-color: #8E24AA; /* dark purple */
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
-button.show-answer-btn:hover {
-    background-color: #5747A5; /* Darker purple on hover */
+header button:hover {
+    background-color: #6A1B9A;
 }
 
-/* Styling for the Japanese words and translation display */
-p {
+/* Section styling: speaking practice & words sections */
+section {
+    text-align: center; /* Center-align text and buttons in sections */
+    margin-top: 20px;
+}
+
+/* Buttons in the sections */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #BA68C8; /* lighter purple for section buttons */
     color: white;
-    font-size: 1.2rem;
-    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-/* For larger screens, ensure sections don't stretch too wide */
-@media (min-width: 1024px) {
-    .section {
-        max-width: 600px; /* Adjust max width for larger screens */
+button:hover {
+    background-color: #AB47BC;
+}
+
+/* Adjust spacing between content in sections */
+p, h2 {
+    margin-bottom: 15px;
+}
+
+/* Styling for text content */
+#english-sentence, #japanese-word, #japanese-translation, #english-meaning {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    button {
+        width: 90%;
     }
 }
+
